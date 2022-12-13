@@ -1,4 +1,4 @@
-package org.example;
+package org.example.classes;
 
 import java.util.Objects;
 
@@ -47,5 +47,20 @@ public class VisualParameters {
                 ", transparency=" + transparency +
                 ", branches=" + branches +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        VisualParameters that = (VisualParameters) obj;
+        return transparency == that.transparency
+                && branches == that.branches
+                && Objects.equals(color, that.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, transparency, branches);
     }
 }

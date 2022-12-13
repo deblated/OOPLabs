@@ -1,0 +1,61 @@
+<pavilion xmlns="lab2classes">
+    <gem id="0">
+        <name>Diamond</name>
+        <preciousness>PRECIOUS</preciousness>
+        <origin>China</origin>
+        <visualParameters>
+            <color>White</color>
+            <transparency>14</transparency>
+            <branches>14</branches>
+        </visualParameters>
+        <value>14</value>
+    </gem>
+
+    <gem id="1">
+        <name>Ruby</name>
+        <preciousness>SEMIPRECIOUS</preciousness>
+        <origin>Spain</origin>
+        <visualParameters>
+            <color>Red</color>
+            <transparency>46</transparency>
+            <branches>4</branches>
+        </visualParameters>
+        <value>15.92</value>
+    </gem>
+
+    <gem id="2">
+        <name>Amethyst</name>
+        <preciousness>PRECIOUS</preciousness>
+        <origin>Japan</origin>
+        <visualParameters>
+            <color>Purple</color>
+            <transparency>24</transparency>
+            <branches>15</branches>
+        </visualParameters>
+        <value>92.15</value>
+    </gem>
+
+    <gem id="3">
+        <name>Sapphire</name>
+        <preciousness>SEMIPRECIOUS</preciousness>
+        <origin>Ukraine</origin>
+        <visualParameters>
+            <color>Blue</color>
+            <transparency>93</transparency>
+            <branches>8</branches>
+        </visualParameters>
+        <value>65.14</value>
+    </gem>
+
+    <gem id="4">
+        <name>Garnet</name>
+        <preciousness>PRECIOUS</preciousness>
+        <origin>Morocco</origin>
+        <visualParameters>
+            <color>Garnet</color>
+            <transparency>14</transparency>
+            <branches>14</branches>
+        </visualParameters>
+        <value>35.3</value>
+    </gem>
+</pavilion>

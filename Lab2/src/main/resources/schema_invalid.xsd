@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="lab2classes"
+           xmlns:cl="lab2classes"
+           elementFormDefault="qualified">
+
+    <xs:element name="pavilion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="gem" type="cl:gem" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="gem">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="preciousness" type="cl:preciousness"/>
+            <xs:element name="origin" type="xs:boolean"/> <!-- invalid type -->
+            <xs:element name="visualParameters" type="cl:visualParameters"/>
+            <xs:element name="value" type="xs:double"/>
+        </xs:all>
+        <xs:attribute name="id" type="xs:nonNegativeInteger" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="preciousness">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PRECIOUS"/>
+            <xs:enumeration value="SEMIPRECIOUS"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="visualParameters">
+        <xs:all>
+            <xs:element name="color" type="xs:string"/>
+            <xs:element name="transparency" type="xs:nonNegativeInteger"/>
+            <xs:element name="branches" type="xs:positiveInteger"/>
+        </xs:all>
+    </xs:complexType>
+
+</xs:schema>
